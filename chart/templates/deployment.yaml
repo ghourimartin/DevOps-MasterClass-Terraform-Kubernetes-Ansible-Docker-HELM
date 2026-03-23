@@ -14,7 +14,9 @@ personalinfo:
   {{"INTRODUCTION DISABLED"}}
 {{- end }}
 
+
 # {{ "<----------------------------------------------------------->" }}
+
 
 fname:
   {{- with .Values.Customblock.author.fname}}
@@ -22,6 +24,8 @@ fname:
   {{- else}}
   {{"VALUE NOT find"}}
   {{- end}}
+
+
 # {{ "<----------------------------------------------------------->" }}
 
   
