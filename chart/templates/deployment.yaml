@@ -30,10 +30,10 @@ fname:
 
 {{ $myVar := true }}  
 {{- if $myVar }}  
-{{"Hi, I am with Varaible True"}}  
+{{"Hi, I am with Varaible True" }}  
 {{- else }}  
-{{"Hi, I am with varaible False"}}  
-{{- end}}  
+{{"Hi, I am with varaible False" }}  
+{{- end }}  
 
 
 # {{ "<----------------------------------------------------------->" }}
