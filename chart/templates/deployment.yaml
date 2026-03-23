@@ -5,7 +5,7 @@ kind: Deployment
   
 
 personalinfo:
-{{- if .Values.Customblock.introEnable }}
+{{- if not .Values.Customblock.introEnable }}
   firstname: {{.Values.Customblock.author.firstname | default "John" | upper | title | quote | nindent 18}}
   lastname: {{.Values.Customblock.author.lastname | default "Doe" | upper | title | quote | nindent 18}}
   address: {{.Values.Customblock.author.address | default "Earth" | upper | quote | nindent 18}}
