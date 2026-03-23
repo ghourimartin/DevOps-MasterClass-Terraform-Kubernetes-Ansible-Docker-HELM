@@ -28,6 +28,16 @@ fname:
 
 # {{ "<----------------------------------------------------------->" }}
 
+{{ $myVar := true }}  
+{{- if $myVar }}  
+{{"Hi, I am with Varaible True"}}  
+{{- else }}  
+{{"Hi, I am with varaible False"}}  
+{{- end}}  
+
+
+# {{ "<----------------------------------------------------------->" }}
+
   
 metadata:
   name: {{ include "chart.fullname" . }}
