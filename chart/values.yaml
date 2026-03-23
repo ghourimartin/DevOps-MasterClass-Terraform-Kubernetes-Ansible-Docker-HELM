@@ -4,7 +4,12 @@
 Customblock:
   introEnable: true
   author:
-    firstname: "Ali"
+    firstname: 
+      - "Ali"
+      - "Hassan"
+      - "Hussain"
+      - "muneeb"
+      - "Matteh"
     lastname: "Ahmed"
     address: "Ward No 8, House no, 12"
     email: "example@gmail.com"
