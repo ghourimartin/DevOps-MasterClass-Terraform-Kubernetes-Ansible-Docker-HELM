@@ -29,7 +29,7 @@ fname:
 # {{ "<----------------------------------------------------------->" }}
 
 personalinfoc:
-{{ $myVar := true }}  
+{{ $myVar := .Values.autoscaling.enabled }}  
 {{- if $myVar }}  
   {{"Hi, I am with Varaible True" }}  
 {{- else }}  
