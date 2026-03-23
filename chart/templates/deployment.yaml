@@ -1,6 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
-  {{"hhyyyyy"}} , {{"hhyyyyy  kjfsfsf dkadkqk"}}
+
+personal-info:
+  first-name: {{.Values.Customblock.author.first-name | default "John" | upper | title | quote}}
+  last-name: {{.Values.Customblock.author.last-name | default "Doe" | upper | title | quote}}
+  address: {{.Values.Customblock.author.address | default "Earth" | upper | title | quote}}
+  author: {{.Values.Customblock.author.first-name | default "John" | upper | title | quote}} {{.Values.Customblock.author.last-name | default "Doe" | upper | title | quote}}
+  email: {{.Values.Customblock.author.email | default "abc@yahoo.com" | quote}}
+
+  {{ "<----------------------------------------------------------->" }}
+
+  {{ "<----------------------------------------------------------->" }}
+  
 metadata:
   name: {{ include "chart.fullname" . }}
   labels:
