@@ -2,10 +2,10 @@ apiVersion: apps/v1
 kind: Deployment
 
 personalinfo:
-  firstname: {{.Values.Customblock.author.firstname | default "John" | upper | title | quote}}
-  lastname: {{.Values.Customblock.author.lastname | default "Doe" | upper | title | quote}}
-  address: {{.Values.Customblock.author.address | default "Earth" | upper | quote}}
-  email: {{.Values.Customblock.author.email | default "abc@yahoo.com" | quote}}
+  firstname: {{.Values.Customblock.author.firstname | default "John" | upper | title | quote | nindent 8}}
+  lastname: {{.Values.Customblock.author.lastname | default "Doe" | upper | title | quote | nindent 8}}
+  address: {{.Values.Customblock.author.address | default "Earth" | upper | quote | nindent 8}}
+  email: {{.Values.Customblock.author.email | default "abc@yahoo.com" | quote | nindent 8}}
 
 # {{ "<----------------------------------------------------------->" }}
 
