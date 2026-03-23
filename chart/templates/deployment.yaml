@@ -12,11 +12,12 @@ personalinfo:
   email: {{.Values.Customblock.author.email | default "abc@yahoo.com" | quote | nindent 18}}
 {{- else }}
   {{"INTRODUCTION DISABLED"}}
-  fname:
+{{- end }}
+
+fname:
   {{- with .Values.Customblock.author.fname}}
   {{- toYaml . | nindent 18}}
   {{- end}}
-{{- end }}
 # {{ "<----------------------------------------------------------->" }}
 
   
