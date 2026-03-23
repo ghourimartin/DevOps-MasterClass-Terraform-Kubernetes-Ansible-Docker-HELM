@@ -4,15 +4,16 @@
 Customblock:
   introEnable: true
   author:
-    firstname: 
+    firstname: "Ali"
+    lastname: "Ahmed"
+    address: "Ward No 8, House no, 12"
+    email: "example@gmail.com"
+    fname: 
       - "Ali"
       - "Hassan"
       - "Hussain"
       - "muneeb"
       - "Matteh"
-    lastname: "Ahmed"
-    address: "Ward No 8, House no, 12"
-    email: "example@gmail.com"
 
 # This will set the replicaset count more information can be found here: https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
 replicaCount: 3
