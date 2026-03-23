@@ -13,7 +13,7 @@ personalinfo:
 {{- else }}
   {{"INTRODUCTION DISABLED"}}
   fname:
-    {{- With .Values.Customblock.author.fname}}
+    {{- with .Values.Customblock.author.fname}}
     {{- toYaml . | nindent 18}}
     {{- end}}
 {{- end }}
