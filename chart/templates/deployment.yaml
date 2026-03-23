@@ -17,7 +17,7 @@ personalinfo:
 # {{ "<----------------------------------------------------------->" }}
 
 fname:
-  {{- with .Values.Customblock.author.fnname}}
+  {{- with .Values.Customblock.author.fname}}
   {{- toYaml . | nindent 1}}
   {{- else}}
   {{"VALUE NOT find"}}
