@@ -5,7 +5,7 @@ kind: Deployment
   
 
 personalinfo:
-{{- if not .Values.Customblock.introEnable}}
+{{- if .Values.Customblock.introEnable}}
   {{- with .Values.Customblock.author.firstname}}
   {{- toYaml . | nindent 18}}
   {{- end}}
