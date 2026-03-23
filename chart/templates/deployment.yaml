@@ -6,7 +6,7 @@ kind: Deployment
 
 personalinfo:
 {{- if not .Values.Customblock.introEnable}}
-  {{- With .Values.Customblock.author.firstname}}
+  {{- with .Values.Customblock.author.firstname}}
   {{- toYaml . | nindent 18}}
   {{- end}}
   # firstname: {{.Values.Customblock.author.firstname | default "John" | upper | title | quote | nindent 18}}
