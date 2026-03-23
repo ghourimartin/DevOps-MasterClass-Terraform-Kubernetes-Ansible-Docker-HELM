@@ -16,7 +16,7 @@ personalinfo:
 
 fname:
   {{- with .Values.Customblock.author.fname}}
-  {{- toYaml }}
+  {{- toYaml . }}
   {{- end}}
 # {{ "<----------------------------------------------------------->" }}
 
