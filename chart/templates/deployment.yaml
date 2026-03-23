@@ -28,6 +28,7 @@ fname:
 
 # {{ "<----------------------------------------------------------->" }}
 
+personalinfoc:
 {{ $myVar := true }}  
 {{- if $myVar }}  
   {{"Hi, I am with Varaible True" }}  
