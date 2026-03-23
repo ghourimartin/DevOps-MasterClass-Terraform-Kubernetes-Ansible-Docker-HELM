@@ -9,9 +9,9 @@ personalinfo:
     author: {{.Values.Customblock.author.firstname | default "John" | upper | title | quote}} {{.Values.Customblock.author.lastname | default "Doe" | upper | title | quote}}
     email: {{.Values.Customblock.author.email | default "abc@yahoo.com" | quote}}
 
-{{ "<----------------------------------------------------------->" }}
+# {{ "<----------------------------------------------------------->" }}
 
-{{ "<----------------------------------------------------------->" }}
+# {{ "<----------------------------------------------------------->" }}
   
 metadata:
   name: {{ include "chart.fullname" . }}
