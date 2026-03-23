@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 
 personalinfo:
-  annotations:
-    firstname: {{.Values.Customblock.author.firstname | default "John" | upper | title | quote}}
-    lastname: {{.Values.Customblock.author.lastname | default "Doe" | upper | title | quote}}
+  # annotations:
+  firstname: {{.Values.Customblock.author.firstname | default "John" | upper | title | quote}}
+  lastname: {{.Values.Customblock.author.lastname | default "Doe" | upper | title | quote}}
     #address: {{.Values.Customblock.author.address | default "Earth" | upper | quote}}
     # author: {{.Values.Customblock.author.firstname | default "John" | upper | title | quote}} {{.Values.Customblock.author.lastname | default "Doe" | upper | title | quote}}
     # email: {{.Values.Customblock.author.email | default "abc@yahoo.com" | quote}}
