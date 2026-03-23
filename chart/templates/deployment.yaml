@@ -5,14 +5,14 @@ kind: Deployment
   
 
 personalinfo:
-{{- if .Values.Customblock.introEnable}}
+{{- if .Values.Customblock.introEnable }}
   firstname: {{.Values.Customblock.author.firstname | default "John" | upper | title | quote | nindent 18}}
   lastname: {{.Values.Customblock.author.lastname | default "Doe" | upper | title | quote | nindent 18}}
   address: {{.Values.Customblock.author.address | default "Earth" | upper | quote | nindent 18}}
   email: {{.Values.Customblock.author.email | default "abc@yahoo.com" | quote | nindent 18}}
-{{- else}}
+{{- else }}
   {{"INTRODUCTION DISABLED"}}
-{{- end}}
+{{- end }}
 # {{ "<----------------------------------------------------------->" }}
 
   
