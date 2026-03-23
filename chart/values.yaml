@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 Customblock:
-  introEnable: false #true
+  introEnable: true
   author:
     firstname: "Ali"
     lastname: "Ahmed"
