@@ -3,9 +3,9 @@ kind: Deployment
 
 personal-info:
   firstname: {{.Values.Customblock.author.firstname | default "John" | upper | title | quote}}
-  lastname: {{.Values.Customblock.author.last-name | default "Doe" | upper | title | quote}}
+  lastname: {{.Values.Customblock.author.lastname | default "Doe" | upper | title | quote}}
   address: {{.Values.Customblock.author.address | default "Earth" | upper | title | quote}}
-  author: {{.Values.Customblock.author.first-name | default "John" | upper | title | quote}} {{.Values.Customblock.author.last-name | default "Doe" | upper | title | quote}}
+  author: {{.Values.Customblock.author.firstname | default "John" | upper | title | quote}} {{.Values.Customblock.author.lastname | default "Doe" | upper | title | quote}}
   email: {{.Values.Customblock.author.email | default "abc@yahoo.com" | quote}}
 
   {{ "<----------------------------------------------------------->" }}
