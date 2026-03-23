@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 
 personal-info:
-  firstname: {{.Values.Customblock.author.first-name | default "John" | upper | title | quote}}
+  firstname: {{.Values.Customblock.author.firstname | default "John" | upper | title | quote}}
   lastname: {{.Values.Customblock.author.last-name | default "Doe" | upper | title | quote}}
   address: {{.Values.Customblock.author.address | default "Earth" | upper | title | quote}}
   author: {{.Values.Customblock.author.first-name | default "John" | upper | title | quote}} {{.Values.Customblock.author.last-name | default "Doe" | upper | title | quote}}
