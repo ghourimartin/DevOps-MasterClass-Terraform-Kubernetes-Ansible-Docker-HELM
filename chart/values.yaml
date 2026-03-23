@@ -6,7 +6,7 @@ Customblock:
     firstname: "Ali"
     lastname: "Ahmed"
     address: "Ward No 8, House no, 12"
-    emails: "example@gmail.com"
+    email: "example@gmail.com"
 
 # This will set the replicaset count more information can be found here: https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/
 replicaCount: 3
