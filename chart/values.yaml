@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 Customblock:
   author:
-    first-name: "Ali"
+    firstname: "Ali"
     last-name: "Ahmed"
     address: #"Ward No 8, House no, 12"
     email: "example@gmail.com"
