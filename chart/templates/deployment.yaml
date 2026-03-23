@@ -13,9 +13,9 @@ personalinfo:
 {{- else }}
   {{"INTRODUCTION DISABLED"}}
   fname:
-    {{- with .Values.Customblock.author.fname}}
-    {{- toYaml . | nindent 18}}
-    {{- end}}
+  {{- with .Values.Customblock.author.fname}}
+  {{- toYaml . | nindent 18}}
+  {{- end}}
 {{- end }}
 # {{ "<----------------------------------------------------------->" }}
 
