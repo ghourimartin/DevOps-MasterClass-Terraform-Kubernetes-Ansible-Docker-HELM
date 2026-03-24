@@ -175,7 +175,7 @@ affinity: {}
 
 # <------------------------------------->
 mysql:
-  enabled: true
+  enabled: false
 
 rabbitmq:
   enabled: false
