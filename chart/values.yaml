@@ -176,6 +176,15 @@ affinity: {}
 # <------------------------------------->
 mysql:
   enabled: false
+  auth: 
+    database: "my_database"
+    username: "zohan123"
+    password: "kinza123"
 
+
+
+
+
+  
 rabbitmq:
   enabled: false
