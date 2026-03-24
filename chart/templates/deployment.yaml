@@ -22,7 +22,7 @@ withElseIn:
   {{- with .Values.Customblock.author.fname}}
   withElseOut:
   {{- toYaml . | nindent 1}}
-  withElseOut:
+  withElseOut2:
   {{- else}}
   {{"VALUE NOT find"}}
   {{- end}}
