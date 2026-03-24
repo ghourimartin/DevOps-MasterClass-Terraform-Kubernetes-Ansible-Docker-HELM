@@ -42,7 +42,7 @@ variable:
 
 Loops:
   {{- range .Values.Customblock.author.fname}}
-  {{- . }}
+    {{- . }}
   {{- end}}
 
 
