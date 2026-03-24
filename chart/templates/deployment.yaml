@@ -19,7 +19,7 @@ personalinfo:
 # {{ "<----------------------------- with else condition----------------------------->" }}
 
 
-withElse:
+withElseOut:
   {{- with .Values.Customblock.author.fname}}
   {{- toYaml . | nindent 1}}
   {{- else}}
@@ -28,11 +28,11 @@ withElse:
 
 
 
-# {{ "<----------------------------- with else condition----------------------------->" }}
+# {{ "<----------------------------- with condition----------------------------->" }}
 
 
 {{- with .Values.Customblock.author.fname}}
-withElseOut:
+withElseIn:
 {{- toYaml . | nindent 1}}
 {{- end}}
 
