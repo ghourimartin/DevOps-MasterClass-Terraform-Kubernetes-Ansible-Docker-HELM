@@ -173,5 +173,9 @@ tolerations: []
 
 affinity: {}
 
-mysqls:
+# <------------------------------------->
+mysql:
+  enabled: false
+
+rabbitmq:
   enabled: false
