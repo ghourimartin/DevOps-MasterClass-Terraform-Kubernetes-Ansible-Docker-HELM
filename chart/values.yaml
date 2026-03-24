@@ -180,9 +180,9 @@ mysql:
     database: "my_database"
     username: "zohan123"
     password: "kinza123"
-  service:
-    type: NodePort
-    port: 3306
+    service:
+      type: NodePort
+      port: 3306
   
 rabbitmq:
   enabled: false
