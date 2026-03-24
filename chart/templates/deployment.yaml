@@ -41,10 +41,10 @@ variable:
 
 
 
-{{- range .Values.Customblock.author.fname }}
+{{ - range .Values.Customblock.author.fname }}
 Loops:
-  {{- . }}
-{{- end }}
+  {{ - . }}
+{{ - end }}
 
 
 
