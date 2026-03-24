@@ -53,10 +53,20 @@ variableOut:
 
 
 LoopsIn:
-
 {{- range .Values.Customblock.author.fname }}
 LoopsOut:
   {{ . }}
+{{- end }}
+
+
+
+# {{ "<------------------------------- Loops in dictionary ----------------------->" }}
+
+
+LoopsIn:
+{{- range $key , $value .Values.image }}
+LoopsOut:
+  {{ $key :  $value}}
 {{- end }}
 
 
