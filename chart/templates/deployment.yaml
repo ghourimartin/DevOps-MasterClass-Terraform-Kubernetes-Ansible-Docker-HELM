@@ -40,8 +40,9 @@ variable:
 # {{ "<------------------------------- Loops ---------------------------->" }}
 
 
-Loops:
+LoopsIn:
 {{- range .Values.Customblock.author.fname }}
+LoopsOut:
   {{ . }}
 {{- end }}
 
