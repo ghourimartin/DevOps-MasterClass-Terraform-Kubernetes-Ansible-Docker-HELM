@@ -64,7 +64,7 @@ LoopsOut:
 
 
 LoopsIn:
-{{- range $key , $value .Values.image }}
+{{- range $key , $value := .Values.image }}
 LoopsOut:
   {{ $key :  $value}}
 {{- end }}
