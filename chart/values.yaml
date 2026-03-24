@@ -178,4 +178,4 @@ mysql:
   enabled: false
 
 rabbitmq:
-  enabled: false
+  enabled: true
