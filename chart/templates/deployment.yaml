@@ -53,7 +53,7 @@ variableOut:
 
 
 LoopsIn:
-{{- range .Values.Customblock.author.fname }}
+{- range .Values.Customblock.author.fname }}
 LoopsOut:
   {{ . }}
 {{- end }}
