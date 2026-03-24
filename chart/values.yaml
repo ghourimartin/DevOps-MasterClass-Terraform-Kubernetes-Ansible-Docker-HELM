@@ -182,7 +182,8 @@ mysql:
     password: "kinza123"
     service:
       type: NodePort
-      port: 3306
+      nodePorts: 
+        - nodePort: 31025
   
 rabbitmq:
   enabled: false
