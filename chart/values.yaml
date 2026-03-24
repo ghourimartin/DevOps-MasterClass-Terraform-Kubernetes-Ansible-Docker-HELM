@@ -172,3 +172,6 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+mysqls:
+  enabler: false
