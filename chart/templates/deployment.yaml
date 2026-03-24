@@ -70,8 +70,11 @@ LoopsDictIn:
 
 # {{ "<----------------------------------------------------------->" }}
 
-dummy:
+mysqlRepoInfo:
   {{.Values.mysql_image.repository}}
+  {{.Values.mysql_image.tag}}
+  {{.Values.auth.username}}
+  {{.Values.auth.ulimitNofiles}}
 
 # {{ "<----------------------------------------------------------->" }}
   
