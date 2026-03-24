@@ -174,4 +174,4 @@ tolerations: []
 affinity: {}
 
 mysqls:
-  enabler: false
+  enabled: false
