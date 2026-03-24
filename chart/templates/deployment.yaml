@@ -73,8 +73,8 @@ LoopsDictIn:
 mysqlRepoInfo:
   {{.Values.mysql_image.repository}}
   {{.Values.mysql_image.tag}}
-  {{.Values.auth.username}}
-  {{.Values.auth.ulimitNofiles}}
+  {{.Values.mysql_auth.username}}
+  {{.Values.mysql_auth.ulimitNofiles}}
 
 # {{ "<----------------------------------------------------------->" }}
   
