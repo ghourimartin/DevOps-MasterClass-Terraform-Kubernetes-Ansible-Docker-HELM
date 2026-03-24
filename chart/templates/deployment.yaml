@@ -18,9 +18,11 @@ personalinfo:
 # {{ "<----------------------------- with else condition----------------------------->" }}
 
 
-withElse:
+withElseIn:
   {{- with .Values.Customblock.author.fname}}
+  withElseOut:
   {{- toYaml . | nindent 1}}
+  withElseOut:
   {{- else}}
   {{"VALUE NOT find"}}
   {{- end}}
