@@ -32,3 +32,4 @@ dependencies:
 - name : rabbitmq
   version : "16.0.14"
   repository : "https://charts.bitnami.com/bitnami"
+  condition: rabbitmq.enabled
