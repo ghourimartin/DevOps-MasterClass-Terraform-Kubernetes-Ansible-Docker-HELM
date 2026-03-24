@@ -63,9 +63,8 @@ LoopsOut:
 # {{ "<------------------------------- Loops in dictionary ----------------------->" }}
 
 
-LoopsIn:
+LoopsDictIn:
 {{- range $key , $value := .Values.image }}
-LoopsOut:
   {{ $key }} :  {{ $value}}
 {{- end }}
 
