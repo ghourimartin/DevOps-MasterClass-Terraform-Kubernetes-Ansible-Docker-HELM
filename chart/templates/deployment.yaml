@@ -31,11 +31,10 @@ withElse:
 # {{ "<----------------------------- with else condition----------------------------->" }}
 
 
-withElse:
-  {{- with .Values.Customblock.author.fname}}
-  withElseOut:
-  {{- toYaml . | nindent 1}}
-  {{- end}}
+{{- with .Values.Customblock.author.fname}}
+withElseOut:
+{{- toYaml . | nindent 1}}
+{{- end}}
 
 
 # {{ "<------------------------------ variable ----------------------------->" }}
