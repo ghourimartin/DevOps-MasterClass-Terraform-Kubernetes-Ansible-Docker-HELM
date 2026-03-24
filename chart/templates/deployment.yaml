@@ -41,9 +41,9 @@ variable:
 
 
 Loops:
-  {{- range .Values.Customblock.author.fname}}
+  {{- range .Values.Customblock.author.fname }}
     {{- . }}
-  {{- end}}
+  {{- end }}
 
 
 
