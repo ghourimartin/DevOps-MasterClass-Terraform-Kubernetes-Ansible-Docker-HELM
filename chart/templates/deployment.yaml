@@ -15,14 +15,26 @@ personalinfo:
 {{- end }}
 
 
+
 # {{ "<----------------------------- with else condition----------------------------->" }}
 
 
-withElseIn:
+withElse:
   {{- with .Values.Customblock.author.fname}}
   {{- toYaml . | nindent 1}}
   {{- else}}
   {{"VALUE NOT find"}}
+  {{- end}}
+
+
+
+# {{ "<----------------------------- with else condition----------------------------->" }}
+
+
+withElse:
+  {{- with .Values.Customblock.author.fname}}
+  withElseOut:
+  {{- toYaml . | nindent 1}}
   {{- end}}
 
 
